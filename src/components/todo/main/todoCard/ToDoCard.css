@@ -1,0 +1,23 @@
+.todo-card {
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #15101c;
+}
+
+p {
+  margin: 0;
+  color: #9e78cf;
+}
+
+.todo-options {
+  color: #9e78cf;
+}
+
+.todo-options i {
+  cursor: pointer;
+}
+
+.todo-done-text {
+  color: #78cfb0;
+  text-decoration: line-through;
+}
