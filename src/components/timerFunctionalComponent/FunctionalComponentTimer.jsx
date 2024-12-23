@@ -112,10 +112,10 @@ export default function FunctionalComponentTimer() {
                         }
                     </div>
                     {
-                        isRunning && !isMusicOn && <audio id='timer-audio' src={timerAudio} loop={true} autoPlay={true}></audio>
+                        isRunning && <audio id='timer-audio' muted={isMusicOn}  src={timerAudio} loop={true} autoPlay={true}></audio>
                     }
                     {
-                        isFinished && !isMusicOn && <audio id='timer-audio' src={stopTimerAudio} autoPlay={true}></audio>
+                        isFinished && <audio id='timer-audio' muted={isMusicOn} src={stopTimerAudio} autoPlay={true}></audio>
                     }
                     <section id='functional-timer-wrapper' className='w-100'>
                         <div>
