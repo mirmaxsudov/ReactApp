@@ -27,6 +27,9 @@ export default function Home() {
                     <div className="col-3">
                         <HomeCard title="Searchable Select" text="React + Searchable Select" link="/searchable" />
                     </div>
+                    <div className="col-3">
+                        <HomeCard title="Functional Timer" text="React + Functional Timer" link="/functional-timer" />
+                    </div>
                 </div>
             </div>
         </div>

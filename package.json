@@ -10,6 +10,7 @@
     "react-bootstrap": "^2.10.7",
     "react-dom": "^18.0.0",
     "react-loading-skeleton": "^3.5.0",
+    "react-native-wheely": "^0.6.0",
     "react-router-dom": "^7.1.0",
     "react-scripts": "5.0.1",
     "react-select": "^5.9.0",
