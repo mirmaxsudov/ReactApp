@@ -27,6 +27,7 @@ export default function FunctionalComponentTimer() {
     });
     const [isFinished, setIsFinished] = useState(false);
     const [isThemeDark, setIsThemeDark] = useState(true);
+    const [finishedAt, setFinishedAt] = useState(null);
 
     const toggleTimer = () => {
         if (isRunning) {
@@ -62,6 +63,10 @@ export default function FunctionalComponentTimer() {
                     return 59;
                 } else {
                     setIsFinished(true);
+                    setFinishedAt(new Date());
+                    setTimeout(() => {
+                        setIsFinished(false);
+                    }, 3000);
                     clearInterval(interval);
                     setIsRunning(false);
                     return 0;
@@ -112,7 +117,7 @@ export default function FunctionalComponentTimer() {
                         }
                     </div>
                     {
-                        isRunning && <audio id='timer-audio' muted={isMusicOn}  src={timerAudio} loop={true} autoPlay={true}></audio>
+                        isRunning && <audio id='timer-audio' muted={isMusicOn} src={timerAudio} loop={true} autoPlay={true}></audio>
                     }
                     {
                         isFinished && <audio id='timer-audio' muted={isMusicOn} src={stopTimerAudio} autoPlay={true}></audio>
