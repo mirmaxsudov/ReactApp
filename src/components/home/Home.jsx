@@ -25,7 +25,7 @@ export default function Home() {
                         <HomeCard title="Creatable Select " text="React + Creatable Select" link="/creatable-select" />
                     </div>
                     <div className="col-3">
-                        <HomeCard title="Searchable Select" text="React + Searchable Select" link="/searchable" />
+                        <HomeCard title="Searchable" text="React + Searchable Select" link="/searchable" />
                     </div>
                     <div className="col-3">
                         <HomeCard title="Functional Timer" text="React + Functional Timer" link="/functional-timer" />
