@@ -1,14 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/home/Home";
 import "./App.css";
-import MainToDo from "./components/todo/main/MainToDo";
-import Stopwatch from "./components/stopWatch/StopWatch";
-import Progress from './components/progress/Progress';
-import SkeletonExample from "./components/skeleton/SkeletonExample";
-import FlavorSelector from "./components/creatableSelect/FlavorSelector";
-import SearchableSelect from "./components/searchable/SearchableSelect";
-import FunctionalComponentTimer from "./components/timerFunctionalComponent/FunctionalComponentTimer";
+import Home from "./components/home/Home";
+import MainToDo from "./components/10/todo/MainToDo";
+import Progress from './components/10/progress/Progress';
+import Stopwatch from './components/10/stopWatch/StopWatch';
+import SkeletonExample from './components/10/skeleton/SkeletonExample';
+import SearchableSelect from './components/10/searchable/SearchableSelect';
+import FlavorSelector from './components/10/creatableSelect/FlavorSelector';
+import FunctionalComponentTimer from './components/timerFunctionalComponent/FunctionalComponentTimer';
+import ManageUser from "./components/12/ManageUser";
+import NotFound from "./components/error/NotFound";
+import OnlineCrud from "./components/learn-exam/OnlineCrud";
 
 function App() {
   return (
@@ -22,7 +25,9 @@ function App() {
         <Route path="/searchable" element={<SearchableSelect />} />
         <Route path="/creatable-select" element={<FlavorSelector />} />
         <Route path="/functional-timer" element={<FunctionalComponentTimer />} />
-        <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="/manage-users" element={<ManageUser />} />
+        <Route path="/online-crud" element={<OnlineCrud />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

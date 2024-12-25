@@ -1,0 +1,26 @@
+.not-found-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0d0714;
+  text-align: center;
+}
+
+.not-found-page h1 {
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.not-found-page h2 {
+  font-size: 2rem;
+}
+
+.not-found-page p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.tc {
+  color: #ddd;
+}

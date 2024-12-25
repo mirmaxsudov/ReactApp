@@ -3,7 +3,6 @@ import { Modal, Button } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MainToDo.css';
-
 import ToDoCard from './todoCard/ToDoCard';
 import ToDoCardDone from './todoCard/ToDoCardDone';
 
