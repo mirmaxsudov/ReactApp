@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 import './OnlineCrud.css';
 
 function OnlineCrud() {
-    const { products, setProducts } = useProduct();
+    const { products } = useProduct();
 
     console.log(products);
 
@@ -15,7 +15,7 @@ function OnlineCrud() {
         <div className="online-store">
             <Container>
                 <Nav />
-                
+
             </Container>
         </div>
     )

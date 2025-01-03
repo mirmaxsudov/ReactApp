@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './TableBody.css';
-import TableUserCounter from '../../count/TableUserCounter';
+import TableUserCounter from '../count/TableUserCounter';
 
 function TableBodyRow({ user: { id, firstName, lastName, phone, isActive, counter }, deleteUser, changeActive, changeCounter }) {
     return (

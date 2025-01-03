@@ -9,9 +9,9 @@ import SkeletonExample from './components/10/skeleton/SkeletonExample';
 import SearchableSelect from './components/10/searchable/SearchableSelect';
 import FlavorSelector from './components/10/creatableSelect/FlavorSelector';
 import FunctionalComponentTimer from './components/timerFunctionalComponent/FunctionalComponentTimer';
-import ManageUser from "./components/12/ManageUser";
 import NotFound from "./components/error/NotFound";
 import OnlineCrud from "./components/learn-exam/OnlineCrud";
+import ManageUser from "./components/12/manage/ManageUser";
 
 function App() {
   return (

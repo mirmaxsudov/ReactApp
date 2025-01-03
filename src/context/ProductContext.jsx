@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useState } from 'react'
 
 export const ProductContext = createContext();
 
@@ -43,8 +43,7 @@ export default function ProductContextProvider({ children }) {
             price: 500,
             imgLink: "https://images.pexels.com/photos/163357/pexels-photo-163357.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             quantity: 80,
-        },
-    ]);
+        },]);
 
     return (
         <ProductContext.Provider value={{ products, setProducts }}>
